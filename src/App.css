@@ -1,0 +1,117 @@
+/* VARIABLES DE ÉLITE */
+:root {
+	--navy: #0f172a;
+	--gold: #b89c72;
+	--ivory: #fdfdfd;
+	--slate: #64748b;
+	--white: #ffffff;
+	--transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* RESET Y BASE */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--ivory);
+	color: var(--navy);
+	font-family: 'Inter', 'Poppins', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+/* NAVBAR - Elegancia persistente */
+.navbar {
+	padding: 1.2rem 5%;
+	background: rgba(253, 253, 253, 0.85);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.nav-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	letter-spacing: 4px;
+	font-weight: 300;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.nav-links {
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: var(--navy);
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	transition: var(--transition);
+}
+
+.nav-cta {
+	border: 1px solid var(--navy);
+	padding: 0.7rem 1.5rem;
+	text-transform: uppercase;
+}
+
+.nav-cta:hover {
+	background: var(--navy);
+	color: var(--white) !important;
+}
+
+/* HERO - Impacto Visual */
+.hero {
+	padding: 140px 5% 100px;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.gold-tag {
+	color: var(--gold);
+	letter-spacing: 6px;
+	font-size: 0.7rem;
+	font-weight: 700;
+	margin-bottom: 2.5rem;
+	display: block;
+}
+
+.hero h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: clamp(2.5rem, 7vw, 5rem);
+	line-height: 1.1;
+	margin-bottom: 2.5rem;
+	font-weight: 500;
+}
+
+.hero h1 span {
+	font-style: italic;
+	color: var(--gold);
+	font-weight: 400;
+}
+
+.hero p {
+	color: var(--slate);
+	max-width: 650px;
+	margin: 0 auto 3.5rem;
+	font-size: 1.2rem;
+	line-height: 1.7;
+	font-weight: 300;
+}
